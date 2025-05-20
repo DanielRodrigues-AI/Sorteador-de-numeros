@@ -7,7 +7,7 @@ function sortear(){
 
     
   if (de >= ate) {
-   alert('Do número, deve ser inferior ate o némero, Verifique!');
+   alert('Do número, deve ser inferior ate o número, Verifique!');
     return;
   } if (quantidade > (ate - de + 1)) {
     alert('Quantidade de numeros sorteados deve ser menor ou igual ao: Do número, Até o número. Verifique!');
