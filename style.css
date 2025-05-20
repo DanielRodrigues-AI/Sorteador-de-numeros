@@ -31,7 +31,7 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 24px;
+    border-radius: 16px;
     border: 1px solid #1875E8;
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
     background-image: url("img/Ruido.png");
@@ -53,7 +53,7 @@ body::before {
 }
 
 .container__texto {
-    margin: 12px 0;
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
 }
@@ -61,7 +61,6 @@ body::before {
 .container__texto-azul {
     color: #1875E8;
     display: block;
-
 }
 
 .container__campo {
@@ -74,12 +73,12 @@ body::before {
 .container__input {
     width: 130px;
     height: 72px;
-    border-radius: 16px;
+    border-radius: 24px;
     background-color: #FFF;
     border: none;
     color: #1875E8;
     padding: 2rem;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
 }
@@ -93,8 +92,8 @@ body::before {
 .container__botao {
     border-radius: 16px;
     background: #1875E8;
-    padding: 16px 24px;
-    font-size: 24px;
+    padding: 16px 16px;
+    font-size: 20px;
     width: 100%;
     font-weight: 700;
     border: none;
@@ -104,8 +103,8 @@ body::before {
 .container__botao-desabilitado {
     border-radius: 16px;
     background: #6f6f70;
-    padding: 16px 24px;
-    font-size: 24px;
+    padding: 16px 16px;
+    font-size: 20px;
     width: 100%;
     font-weight: 700;
     border: none;
@@ -124,7 +123,7 @@ h1 {
 .texto__paragrafo {
     color: #FFF;
     font-family: 'Inter';
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -140,12 +139,84 @@ button:disabled {
     background-color: gray;
 }
 
-@media screen and (max-width: 1250px) {
+
+
+@media screen and (max-width: 420px) {
+    .container {
+        flex-direction: column;
+        padding: 1rem;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 10px;
+        padding: 1rem;
+    }
+
+    .container__informacoes {
+        padding: 1rem;
+    }
+
+    .container__texto {
+        margin: 10px 0;
+    }
+
+    .container__input {
+        width: 100%;
+        font-size: 20px;
+        padding: 1rem;
+    }
+
+    .container__botoes {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .container__botao,
+    .container__botao-desabilitado {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
     .container__imagem-pessoa {
         display: none;
     }
 
+    .texto__paragrafo {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
     h1 {
-        font-size: 50px;
+        font-size: 20px;
+    }
+
+    .container__input {
+        font-size: 18px;
+    }
+
+    .container__botao,
+    .container__botao-desabilitado {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .container__input {
+        font-size: 16px;
+    }
+
+    .container__botao,
+    .container__botao-desabilitado {
+        font-size: 14px;
+    }
+
+    .container__imagem-pessoa {
+        display: none;
     }
 }
